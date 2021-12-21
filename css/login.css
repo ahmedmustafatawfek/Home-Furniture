@@ -1,0 +1,55 @@
+/***********************form***************************/
+body{
+    background-image: url(../images/login-wallpaper.jpg);
+}
+
+
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    width: 50%;
+    text-align: center;
+    background-color: #5b615a;
+    padding: 20px;
+    border-radius: 25px;
+    opacity: 0.7;
+
+}
+
+.section-form h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px ;
+    color: #F8EDE3;
+
+}
+
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #F8EDE3;
+    border-radius: 15px;
+
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Praise', cursive;
+    font-family: 'Shippori Antique B1', sans-serif;
+    outline: none;
+
+}
+.section-form form input[type=submit]{
+    font-size: 20px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+.section-form form input[type=submit]:hover{
+    opacity: 1;
+    background-color: #798777;
+    transition: all 0.6s ease-in-out;
+}

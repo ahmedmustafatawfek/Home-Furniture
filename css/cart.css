@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Praise', cursive;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+header .container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color: #798777;
+    padding: 10px 0;
+    opacity: 0.8;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: #FEF5ED;
+
+}
+
+.header-content a:hover{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul#user_info{
+    display: none;
+    align-items: center;
+}
+nav ul#user_info li{
+    position: relative;
+}
+
+nav ul#user_info li i{
+    position: absolute;
+    color: #FEF5ED;
+    font-size: 20px;
+    right: 20px;
+    top: -5px;
+
+}
+
+nav ul#user_info li .badge{
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    right:15px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    display: none;
+}   
+
+nav li a{
+    display: block;
+    color: #f8ebe3;
+    min-width: 50px;
+    margin: 0 5px;
+    padding: 5px;    
+    transition: all 0.6s ease-in-out;
+
+}
+
+nav li a:hover{
+    color: white;
+}
+
+.cart-products{
+    position: absolute;
+    width: 200px;
+    top: 37px;
+    transform: translate(5% , 0);
+    padding: 10px;
+    border: 1px solid #f8ebe3;
+    border-radius:5px ;
+    background-color: #f8ebe3;
+    display: none;
+}
+.cart-products a{
+    display: block;
+    color: rgb(31, 31, 31);
+    margin: 0;
+    padding: 10px 0;
+    text-decoration: none;
+
+}
+.cart-products a:hover{
+    color: black;
+}
+
+
+/****************************************************************/
+
+.products{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.product-item{
+    width: 20%;
+    margin-right: auto;
+    margin-left: 25px;
+    border: solid 1px #f8ebe3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-item img{
+    width:100%;
+    height:70%;
+    border-radius:10px;
+    transition: all 0.6s ease-in-out;
+
+}
+.product-item img:hover{
+    transform: scale(1.1);
+
+}
+.product-desc{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.product-item-actions{
+    display: grid;
+    grid-template-columns:  70% ;
+    grid-gap: 60px;
+    margin-left: 70px;
+
+}
+
+
+.product-item-actions .remove-from-cart{
+    font-size: 15px;
+    background-color: #798777;
+    color: #f8ebe3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Praise', cursive;
+    font-family: 'Shippori Antique B1', sans-serif;
+
+}
+
+.product-item-actions .remove-from-cart:hover{
+    color: #798777;
+    background-color: #f8ebe3;
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+
+.product-item-actions .fav{
+    cursor: pointer;
+    font-size: 25px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-item-actions .fav:hover{
+    color: red;
+    transform: scale(1.2);
+
+}
+.no-products{
+    display: flex;
+    margin: 10% 44%;
+    font-weight: 900;
+    color: rgb(141, 125, 125);
+}
+
+.product-desc a{
+    text-decoration: none;
+    color:#191919;
+}
